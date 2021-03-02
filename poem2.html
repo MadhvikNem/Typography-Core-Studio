@@ -15,6 +15,10 @@
   </style>
       <style>
   
+  @font-face {
+  font-family: myFirstFont;
+  src: url(xanhmono-regular-webfont.woff);
+}
   
       
   a{
@@ -31,7 +35,7 @@
 
         p{
           font-size: 15px;
-          font-family:monospace;
+          font-family:myFirstFont;
          text-align: left;
          color: rgb(249, 255, 223);
          width: 15%;
@@ -40,7 +44,7 @@
 
       p{
           font-size: 15px;
-          font-family:monospace;
+          font-family:myFirstFont;
          text-align: left;
          color: rgb(253, 255, 223);
          width: 15%;
@@ -48,7 +52,7 @@
 
 
       body {
-	background: linear-gradient(-45deg, #e78567, #d4477d, #33abd6, #a0da43);
+	background: linear-gradient(-45deg, #151c7c, #1714be, #db1d1d, #ce1313);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -112,7 +116,27 @@ a:hover {
         width: 1000px;
         
         transition-duration: 8s;
+
+        transform: rotate(360);
+     
+     animation:spin 5s linear;
+     opacity: 100%;
+     transition-duration: 5s;
+     
+  }
+
+  @keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
       }
+      
         
     </style>
    
